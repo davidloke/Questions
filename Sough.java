@@ -1,5 +1,4 @@
 import java.util.Hashtable;
-import java.util.LinkedList;
 import java.util.ListIterator;
 
 class Pair {
@@ -29,7 +28,6 @@ class Node {
 class Main {
   private static final int maxLength = 1000;
   private static final int maxWidth = 1000;
-  private static LinkedList<Pair> coordinateHistory;
   private static Node head; 
   private static Node tail;
   private static Hashtable<String,Node> pairLookupTable;
@@ -38,7 +36,6 @@ class Main {
     
     // Provided 2D data structure 
     Node[][] grid = new Node[maxLength][maxWidth];
-    coordinateHistory = new LinkedList<>();    
     pairLookupTable = new Hashtable<>();
     nodeLookupTable = new Hashtable<>();
 
